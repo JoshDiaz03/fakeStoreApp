@@ -36,7 +36,7 @@ function EditProduct() {
         e.preventDefault();
 
         try{
-            const response = await axios.put("https://fakestoreapi.com/products/${id}", formData);
+            const response = await axios.put(`https://fakestoreapi.com/products/${id}`, formData);
             console.log(response.data);
             setSuccess(true);
             navigate('/products');

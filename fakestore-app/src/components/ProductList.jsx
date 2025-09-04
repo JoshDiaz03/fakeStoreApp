@@ -46,7 +46,7 @@ function ProductList() {
                                     <Card.Title>{product.title}</Card.Title>
                                     <Card.Text>${product.price}</Card.Text>
                                 </Card.Body>
-                                <Button as={Link} to={`products/${product.id}`} variant="primary">View Details</Button>
+                                <Button as={Link} to={`${product.id}`} variant="primary">View Details</Button>
                             </Card>
 
                         </Col> 
