@@ -5,7 +5,7 @@ import Home from './components/Home'
 import NavigationBar from './components/NavigationBar'
 import ProductDetails from './components/ProductDetails'
 import ProductList from './components/ProductList'
-//import EditProduct from './pages/EditProduct';
+import EditProduct from './components/EditProduct';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/products" element={<ProductList/>}></Route>
           <Route path="/products/:id" element={<ProductDetails/>}></Route>
           <Route path="/addproduct" element={<AddProduct/>}></Route>
-          
+          <Route path="/editproduct" element={<EditProduct/>}></Route>
         </Routes>
       </Router>
      
